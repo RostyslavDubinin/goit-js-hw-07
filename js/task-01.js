@@ -1,5 +1,5 @@
-// const len = document.querySelector('ul').children.length;
-// console.log(`В списке ${len} категории.`);
+const len = document.querySelector('ul').children.length;
+console.log(`В списке ${len} категории.`);
 
 const categoriesFirstLi = Array.from(
     document.querySelector('#categories').children
