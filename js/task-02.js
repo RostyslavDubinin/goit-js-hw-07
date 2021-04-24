@@ -9,14 +9,22 @@ const ingredients = [
 
 
   
-// const heading = [];
+const elements = ingredients.map(ingredient => {
 
-// ingredients.forEach(ingredient => {
-//     heading.push(document.createElement('li'));
-//     heading.forEach(head => {
-//     head.textContent = ingredient;});
-//   });
+  const liEl = document.createElement('li');
+  liEl.textContent = ingredient;
+  return liEl;
 
-//   const ul = document.querySelector("ul");
-//   ul.appendChild(...heading);
+});
+
+
  
+
+const ulEl = document.querySelector('#ingredients');
+ulEl.append(...elements);
+
+console.log(ulEl);
+
+ 
+
+  
