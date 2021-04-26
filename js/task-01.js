@@ -8,11 +8,13 @@ const categoriesFirstLi = Array.from(
   const categoriesList = [];
   
   categoriesFirstLi.forEach(element => {
-    categoriesList.push(
-      `Категория: ${element.firstElementChild.textContent} / Количество: ${
+    console.log(
+      `· Категория: ${element.firstElementChild.textContent}
+· Количество: ${
         element.lastElementChild.children.length
       }`
     );
+    
   });
   
-  console.log(categoriesList);
+ 
